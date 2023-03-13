@@ -4,7 +4,7 @@
 
 @section('pages')
 
-@section('page', 'Dasboard')
+@section('page', 'Dashboard')
 
 @section('konten_dashboard')
 

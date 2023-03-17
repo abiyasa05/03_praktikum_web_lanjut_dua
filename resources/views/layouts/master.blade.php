@@ -117,6 +117,12 @@
               <p>My Diary</p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href='data_mahasiswa' class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Data Mahasiswa</p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -161,6 +167,8 @@
                 @yield('konten_profile')
 
                 @yield('konten_contact')
+
+                @yield('konten_mahasiswa')
               </div>
             </div>
             <!-- /.card -->

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Mahasiswa;
 use Illuminate\Http\Request;
 
 class HalamanController extends Controller
@@ -36,5 +37,9 @@ class HalamanController extends Controller
     }
     function contact(){
         return view('contact');
+    }
+    function data_mahasiswa(){
+        $data = Mahasiswa::orderby('nim', 'desc')->get();
+        return view('mahasiswa')->with('data', $data);
     }
 }

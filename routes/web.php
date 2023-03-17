@@ -33,3 +33,5 @@ Route::get('/profile',[HalamanController::class, 'profile']);
 Route::get('/MyDiary',[HalamanController::class, 'MyDiary']);
 
 Route::get('/contact-us',[HalamanController::class, 'contact']);
+
+Route::get('/data_mahasiswa', [HalamanController::class, 'data_mahasiswa']);
